@@ -18,7 +18,7 @@ loadCartridgeJob.with{
           name('SCM_PROVIDER')
           choiceListProvider {
             systemGroovyChoiceListProvider {
-              scriptText('''
+              scriptText('
 import hudson.model.*;
 import hudson.util.*;
 
@@ -50,7 +50,7 @@ if (providerList.isEmpty()) {
 }
 
 return providerList;
-''')
+')
               defaultChoice('Top')
               usePredefinedVariables(false)
             }
